@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div { 
+          margin-bottom: 10px;
+        }
+        div label {
+            display: block;
+            float: left;
+            width: 90px;  
+        }
+        textarea{
+            vertical-align: top;
+        }
+    </style>
+    <title>Hire me</title>
+</head>
+
+<body>
+    <header>
+        <h1>Hire me</h1>
+    </header>
+    
+    <main>
+        <h3>Contact information</h3>
+
+        <table border="1" cellspacing="0" cellpadding="10px">
+            <tbody>
+                <tr>
+                    <td><strong>Phone</strong></td>
+                    <td>+380930123456</td>
+                </tr>
+                <tr>
+                    <td><strong>Address</strong></td>
+                    <td>Brovary, Kyiv region</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form action=".hireme.html" method="post">
+            <fieldset>
+                <legend>Contact form</legend>
+                                    
+                <div>
+                    <label for="user email">E-mail:</label>
+                    <input required id="user email" type="email" name="email" />
+                </div>
+            
+                <div>
+                    <label for="description">Description:</label>
+                    <textarea name="description" id="description" cols="20" rows="5"></textarea>
+                </div>
+
+                <div>
+                    <label for="work-type">Work type:</label>
+                        <select required name="work-type" id="work-type">
+                            <option></option>
+                            <option value="Full-time">Full-time</option>
+                            <option value="Remote">Remote</option>
+                            <option value="One-time project">One-time project</option>
+                        </select>  
+                </div>
+
+                <input type="submit" value="Hire me"/>
+                               
+            </fieldset>
+        </form>
+    </main>
+</body>
