@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.position {
+    font-weight: bold
+}
+
+.name {
+    font-style: italic;
+}
+
+.thead {
+    text-transform: uppercase;
+}
+
+.link {
+    color: #00f;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.link:visited {
+    color: #005;
+}
+
+.items {
+    list-style-type: square;
+}
