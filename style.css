@@ -1,25 +1,31 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
+    display: flex;
+    flex-direction: row;
 }
 
 header {
-    display: inline;
+    flex: 25%;
+    padding: 20px;
 }
 
-.main_info {
-    display: inline-block;
+main {
+    flex: 75%;
+    padding: 20px;
 }
+
 
 img {
-    height: 100px;
-    width: 100px;
+    width: 25vw;
+    height: 50vh;
     object-fit: cover;
-    object-position: 100% 20%;
+    object-position: 100% 25%;
     border: 2px solid orange;
     padding: 10px;
-    float: right;
-    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table {
@@ -33,11 +39,18 @@ th, td {
     border: 1px solid;
 }
 
+
 .theader {
     background-color: orange;
 }
 
 .border {
+    border: 2px solid orange;
+    border-width: 0 0 2px 0;
+}
+
+.borderul {
+    column-count: 2;
     border: 2px solid orange;
     border-width: 0 0 2px 0;
 }
