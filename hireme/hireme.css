@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1, h3 {
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 97%;
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid;
+}
+
+input, textarea, fieldset {
+    appearance: none;
+    background-color: transparent;
+}
+
+input, textarea, select, fieldset {
+    border: none;
+}
+
+fieldset {
+    margin-top: 10px;
+}
+
+legend {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+input, textarea, select {
+    margin-top: 5px;
+    width: 100%;
+    border: 2px solid rgb(255, 221, 163);
+    background-color: rgb(255, 221, 163);
+    border-radius: 3px; 
+}
+
+
+label {
+    font-weight: bold;
+}
+
+textarea{
+    vertical-align: top;
+    height: 6rem;
+}
+
+input, select {
+    height: 2rem;
+}
+
+input[type="submit"] {
+    font-weight: bold;
+    font-size: large;
+    background-color: orange;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+  
+.user_email:invalid + .error {
+    display: inline-block;
+}
+
+p {
+    margin-top: 0;
+    font-size: small;
+}

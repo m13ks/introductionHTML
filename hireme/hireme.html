@@ -3,19 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <style>
-        div { 
-          margin-bottom: 10px;
-        }
-        div label {
-            display: block;
-            float: left;
-            width: 90px;  
-        }
-        textarea{
-            vertical-align: top;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./hireme.css" />
     <title>Hire me</title>
 </head>
 
@@ -27,7 +17,7 @@
     <main>
         <h3>Contact information</h3>
 
-        <table border="1" cellspacing="0" cellpadding="10px">
+        <table cellspacing="0" cellpadding="10px">
             <tbody>
                 <tr>
                     <td><strong>Phone</strong></td>
@@ -40,18 +30,27 @@
             </tbody>
         </table>
 
-        <form action="./hireme.html" method="post">
+        <form action="./hireme.html" method="get">
             <fieldset>
+
                 <legend>Contact form</legend>
                                     
                 <div>
                     <label for="user_email">E-mail:</label>
-                    <input required id="user_email" type="email" name="email" />
-                </div>
+                    <input
+                    required
+                    id="user_email" 
+                    class="user_email"
+                    type="email"
+                    name="email"
+                    placeholder="mail@mail.com"/>
+
+                    <p class="error">Error message</p>
+                </div>               
             
                 <div>
                     <label for="description">Description:</label>
-                    <textarea name="description" id="description" cols="20" rows="5"></textarea>
+                    <textarea name="description" id="description" cols="20" rows="5" maxlength="255" placeholder="text"></textarea>
                 </div>
 
                 <div>
