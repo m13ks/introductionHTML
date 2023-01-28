@@ -1,20 +1,39 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    display: flex;
+:root {
+    /* sizes */
+    --border-width: 2px;
+    --space-main: 20px;
+       
+    --font-family-base: Arial, Helvetica, sans-serif;
+}
+
+.main-theme {
+    /* colors */
+    --color-main: #FFFFFF;
+    --color-main-secondary: #86A3B4;
+    --color-table-main: rgb(226, 233, 238);
+    --color-table-header: #86A3B4;
+    --color-error: #841019;
+    --color-border-primary: black;
+    --color-border-table: #466e85;
+    --color-name: white;
+    --color-surname: #1C2E8C;
 }
 
 header {
-    flex: 25%;
-    padding: 20px;
-    position: sticky;
-    top: 0%;
-    align-self: flex-start;
+    width: 27%;
+    height: 100%;
+    background-color: var(--color-main-secondary);
+    padding: var(--space-main);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 main {
-    flex: 75%;
-    padding: 20px;
+    margin-left: 30%;
+    padding: var(--space-main);
+    background-color: var(--color-main);
 }
 
 
@@ -23,55 +42,59 @@ img {
     height: 50vh;
     object-fit: cover;
     object-position: 50% 25%;
-    border: 2px solid orange;
-    padding: 10px;
+    border: var(--border-width) solid var(--color-border-primary);
+    padding: calc(var(--space-main) / 2);
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 table {
     min-width: 100%;
-    border: 2px solid;
+    border: var(--border-width) solid var(--color-border-table);
     border-collapse: collapse;
-    background-color:  rgb(255, 221, 163);
+    background-color:  var(--color-table-main);
 }
 
 th, td {
-    border: 1px solid;
+    border: 1px solid var(--color-border-table);
 }
 
 
 .theader {
-    background-color: orange;
+    background-color: var(--color-table-header);
 }
 
-.border {
-    border: 2px solid orange;
-    border-width: 0 0 2px 0;
-}
-
-.borderul {
+ul {
+    list-style-type: square;
     column-count: 2;
-    border: 2px solid orange;
-    border-width: 0 0 2px 0;
 }
 
 .position {
     font-weight: bold;
+    float: left;
 }
 
 .name {
-    font-style: italic;
+    color: var(--color-name);
+    font-style: normal;
     float: left;
+}
+
+.surname {
+    color: var(--color-surname);
+}
+
+.border {
+    border: var(--border-width) solid var(--color-border-primary);
+    border-width: 0 0 2px 0;
 }
 
 thead {
     text-transform: uppercase;
 }
 
+
 .link {
-    color: #00f;
+    color: #1C2E8C;
 }
 
 .link:hover {
@@ -82,6 +105,6 @@ thead {
     color: #005;
 }
 
-.items {
-    list-style-type: square;
+p {
+    margin-bottom: 30px;
 }

@@ -1,0 +1,12 @@
+.my-theme {
+    /* colors */
+    --color-main: white;
+    --color-main-secondary: white;
+    --color-table-main: rgb(255, 221, 163);
+    --color-table-header: orange;
+    --color-error: #ed0619;
+    --color-border-primary: orange;
+    --color-border-table: black;
+    --color-name: black;
+    --color-surname: black;
+}
