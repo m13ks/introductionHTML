@@ -1,10 +1,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1024px;
-    position: fixed;
+    margin: auto;
+    color: #3B4256;
+    /*position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
 }
 
 h1, h3 {
@@ -12,16 +14,19 @@ h1, h3 {
 }
 
 table {
-    margin-left: auto;
+    margin-left: 0.7vw;
     margin-right: auto;
-    min-width: 97%;
-    border: 2px solid;
-    border-collapse: collapse;
+    width: 98.5%;
+    background-color: #F8FAFC;
+    border: 2px solid white;
+    border-radius: 3px;
 }
 
-th, td {
-    border: 1px solid;
+tr td {
+    border: 2px solid white;
+    border-radius: 3px;
 }
+
 
 input, textarea, fieldset {
     appearance: none;
@@ -34,6 +39,7 @@ input, textarea, select, fieldset {
 
 fieldset {
     margin-top: 10px;
+    width: auto;
 }
 
 legend {
@@ -48,9 +54,8 @@ div {
 
 input, textarea, select {
     margin-top: 5px;
-    width: 100%;
-    border: 2px solid rgb(255, 221, 163);
-    background-color: rgb(255, 221, 163);
+    border: 1px solid #F8FAFC;
+    background-color: #F8FAFC;
     border-radius: 3px; 
 }
 
@@ -62,16 +67,21 @@ label {
 textarea{
     vertical-align: top;
     height: 6rem;
+    width: 100%;
 }
 
 input, select {
     height: 2rem;
+    width: 100%;
 }
 
 input[type="submit"] {
+    color: white;
     font-weight: bold;
     font-size: large;
-    background-color: orange;
+    background-color: #0048D9;
+    border: 1px solid #0048D9;
+    border-radius: 6px;
 }
 
 input:invalid {
