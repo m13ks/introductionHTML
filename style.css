@@ -1,6 +1,7 @@
 :root {
     /* sizes */
     --space-main: 40px;
+    --space-secondary: 10px;
        
     --font-family-base: Arial, Helvetica, sans-serif;
     --font-family-code: "Gill Sans", sans-serif;
@@ -8,6 +9,9 @@
 
 .main-theme {
     /* colors */
+    --color-text: #1E1E1E;
+    --color-link-main: #1C2E8C;
+    --color-link-secondary:  #005;
     --color-main: #ffffff;
     --color-main-secondary: #86A3B4;
     --color-border-primary: #1E1E1E;
@@ -17,6 +21,7 @@
 
 body {
     font-family: var(--font-family-base);
+    color: var(--color-text);
     position: relative;
     max-width: 1000px;
     height: 1000px;
@@ -33,7 +38,7 @@ header {
     filter: drop-shadow(0.75px 0px 0 #1E1E1E);
     position: sticky;
     align-self: flex-start;
-    top: -40px;
+    top: calc(-1 * var(--space-main));
     height: 105vh;
 }
 
@@ -79,20 +84,20 @@ ul {
 }
 
 .border {
-    padding-bottom: 10px;
+    padding-bottom: var(--space-secondary);
     border-bottom: 4px solid var(--color-border-primary);
 }
 
 main .border {
-    margin-right: 40px;
+    margin-right: var(--space-main);
 }
 
 h4, h5 {
-    margin-top: -10px;
+    margin-top: calc(-1 * var(--space-secondary));
 }
 
 .link {
-    color: #1C2E8C;
+    color: var(--color-link-main);
 }
 
 .link:hover {
@@ -100,15 +105,15 @@ h4, h5 {
 }
 
 .link:visited {
-    color: #005;
+    color: var(--color-link-secondary);
 }
 
 p {
-    margin-bottom: 15px;
+    margin-bottom: calc(1.5 * var(--space-secondary));
 }
 
 .info {
-    margin-bottom: 50px;
+    margin-bottom: calc(5 * var(--space-secondary));
 }
 
 .bold {

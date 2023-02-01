@@ -1,8 +1,11 @@
 .my-theme {
     /* colors */
-    --color-main: white;
-    --color-main-secondary: rgb(238, 227, 189);
-    --color-border-primary: orange;
-    --color-name: rgb(168, 3, 3);
+    --color-text: #ffffff;
+    --color-main: #39393a;
+    --color-link-main: #E9D758;
+    --color-link-secondary:  #297373;
+    --color-main-secondary: #c26303;
+    --color-border-primary: #E6E6E6;
+    --color-name: rgb(134, 3, 3);
     --color-surname: black;
-}   
+}
