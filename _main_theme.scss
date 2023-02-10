@@ -1,0 +1,34 @@
+$color_text: #1E1E1E;
+$color_link_main: #1C2E8C;
+$color_link_secondary: #005;
+$color_main: #ffffff;
+$color_main_secondary: #86A3B4;
+$color_border_primary: #1E1E1E;
+$color_name: white;
+$color_surname: #1C2E8C;
+
+.main-theme {
+	color: $color_text;
+   	.link {
+		color: $color_link_main;
+		&:visited {
+			color: $color_link_secondary;
+		}
+	}
+
+	main {
+		background-color: $color_main;
+	}
+
+	header {
+		background-color: $color_main_secondary;
+	}
+
+	.name {
+		color: $color_name;
+	}
+
+	.surname {
+		color: $color_surname;
+	}
+}
