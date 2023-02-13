@@ -115,8 +115,6 @@ img:hover {
   box-shadow: 5px 0px 10px rgb(0, 0, 0);
   transition-duration: 1s;
   transition-timing-function: ease-out;
-  transform: none;
-  box-shadow: none;
 }
 
 ul {
