@@ -17,4 +17,25 @@ document.addEventListener("keydown", function(event) {
 });
 
 
+document.addEventListener("DOMContentLoaded", async function() {
+  const response = await fetch('https://api.github.com/users/m13ks/repos');
+  const repositories = await response.json();
+  const repoList = document.getElementById('projects-list');
+  repositories.forEach(repository => {
+    const listItem = document.createElement('li');
+    const link = document.createElement('a');
+    link.href = repository.html_url;
+    link.textContent = repository.full_name;
+    listItem.appendChild(link);
+    if (repository.description) {
+      const description = document.createElement('p');
+      description.textContent = repository.description;
+      listItem.appendChild(description);
+    }
+    repoList.appendChild(listItem);
+  });
+});
+
+
+
 
