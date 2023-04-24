@@ -17,12 +17,9 @@ document.addEventListener("keydown", function(event) {
 });
 
 
-
-
-
 document.addEventListener("DOMContentLoaded", async function() {
-  const gitHubApi = new GitHubAPI('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', 'm13ks');
-  const repositories = await gitHubApi.getRepos();
+  const response = await fetch('https://api.github.com/users/m13ks/repos');
+  const repositories = await response.json();
   const repoList = document.getElementById('projects-list');
   repositories.forEach(repository => {
     const listItem = document.createElement('li');
@@ -40,20 +37,5 @@ document.addEventListener("DOMContentLoaded", async function() {
 });
 
 
-class GitHubAPI {
-  constructor(token, username) {
-    this.token = token;
-    this.username = username;
-  }
 
-  async getRepos() {
-    const response = await fetch(`https://api.github.com/users/${this.username}/repos`, {
-      headers: {
-        Authorization: `Token ${this.token}`
-      }
-    });
-    const repos = await response.json();
-    return repos;
-  }
-}
 
